@@ -1,0 +1,23 @@
+<section class="py-4 bg-dark text-secondary text-center">
+  <h3>Skills</h3>
+  <p class="w-50 m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad doloribus molestias nostrum, at debitis unde impedit neque beatae excepturi suscipit mollitia provident ipsum optio tempore! Voluptate explicabo debitis illo hic!</p>
+
+  <div class="row mt-5">
+    <div class="col-12 col-md-6">
+      <h3 class="">my focus</h3>
+      <ul class="list-unstyled">
+        <li class="mb-2">UI/UX Design</li>
+        <li class="mb-2">Responsive Design</li>
+        <li class="mb-2">web Design</li>
+        <li class="mb-2">Mobile App Design</li>
+      </ul>
+    </div>
+      <div class="col-12 text-sm-center col-md-6">
+        <ng-container *ngFor="let item of skills">
+          <app-progress [skill]="item"></app-progress>
+        </ng-container>
+      </div>
+
+  </div>
+
+</section>

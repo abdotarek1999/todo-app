@@ -1,0 +1,33 @@
+<section class="border border-info p-5">
+
+<h1>lets get some work done!</h1>
+
+
+
+
+<table class="table caption-top">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let item of result;let i=index">
+    <tr>
+      <th scope="row">{{i+1}}</th>
+      <td [ngClass]="{'text-decoration-line-through':item.finished}" #selecteditem>{{item.name}}</td>
+      <td>
+        <button class="btn btn-success me-2" (click)="changestatus(item)">{{(item.finished)?'reundo':'Finish'}}</button>
+        <button class="btn btn-danger" (click)="removedindex(i)">remove</button>
+      </td>
+    </tr>
+  </ng-container>
+
+
+</tbody>
+</table>
+
+
+</section>

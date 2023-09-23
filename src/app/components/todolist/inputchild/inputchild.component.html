@@ -1,0 +1,8 @@
+<section class="bg-primary text-white">
+  <h1 class="text-end p-3">To-Do App!</h1>
+  <label for="add" class="text-end">add new todo</label>
+  <br>
+  <input type="text" #valueinput class="w-80" id="add" placeholder="Enter New Task">
+  <br>
+  <button (click)="sentvalue(valueinput)" class="bg-transparent border-white px-4">Add</button>
+</section>

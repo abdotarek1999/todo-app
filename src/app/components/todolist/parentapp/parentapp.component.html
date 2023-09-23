@@ -1,0 +1,5 @@
+<section class="border border-danger w-50 m-auto">
+
+  <app-inputchild (sentinputvalue)="recievedvalue($event)"></app-inputchild>
+  <app-outputchild [result]="list" (sentindex)="recievedindex($event)"></app-outputchild>
+</section>

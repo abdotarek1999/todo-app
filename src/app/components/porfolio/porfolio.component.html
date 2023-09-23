@@ -1,0 +1,21 @@
+<section class="portfolio my-4 ">
+  <h1>PORTFOLIO</h1>
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <ng-container *ngFor="let item of portfolio;let odd=odd">
+        <div class="col">
+          <div class="card" [ngStyle]= "{'background-color':odd? 'black':'gray'}">
+          <app-card [port]="item"></app-card>
+          </div>
+        </div>
+      </ng-container>
+
+
+
+    </div>
+
+  </div>
+
+</section>
